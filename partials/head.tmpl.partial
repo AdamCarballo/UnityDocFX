@@ -6,7 +6,17 @@
   <meta name="title" content="{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}}">
   <meta name="generator" content="docfx {{_docfxVersion}}">
   {{#_description}}<meta name="description" content="{{_description}}">{{/_description}}
-  <link rel="shortcut icon" href="{{_rel}}{{{_appFaviconPath}}}{{^_appFaviconPath}}favicon.ico{{/_appFaviconPath}}">
+
+  <!-- Favicons -->
+  <!-- <link rel="shortcut icon" href="{{_rel}}{{{_appFaviconPath}}}{{^_appFaviconPath}}favicon.ico{{/_appFaviconPath}}"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{_rel}}favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{_rel}}favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{_rel}}favicons/favicon-16x16.png">
+  <link rel="manifest" href="{{_rel}}site.webmanifest">
+  <link rel="mask-icon" href="{{_rel}}favicons/safari-pinned-tab.svg" color="#5357ff">
+  <meta name="msapplication-TileColor" content="#5357ff">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="{{_rel}}styles/docfx.vendor.css">
   <link rel="stylesheet" href="{{_rel}}styles/docfx.css">
   <link rel="stylesheet" href="{{_rel}}styles/main.css">
