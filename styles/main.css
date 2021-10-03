@@ -163,11 +163,15 @@ header {
     color: #fff;
 }
 
-.navbar-brand>svg path {
+.navbar-brand>svg path, .navbar-brand>svg polygon {
     fill: #fff;
 }
 
-.navbar-brand>svg:hover path {
+.navbar-brand>svg {
+    width: 38px;
+}
+
+.navbar-brand>svg:hover path, .navbar-brand>svg:hover polygon {
     fill: #00cccc;
 }
 
