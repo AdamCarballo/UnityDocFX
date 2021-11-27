@@ -222,11 +222,64 @@ header {
   display: inline-block;
 }
 
+.navbar-title {
+  margin: 2px 0 0 50px;
+  font-size: 24px;
+  color: white;
+}
+
 .navbar-form {
-  width: 250px;
+  width: 366px;
   padding: 0px;
   border: none;
   margin: 0px;
+}
+
+.navbar-hyper {
+  width: 174px;
+  height: 60px;
+  padding: 0px;
+  border: none;
+  margin: 0px;
+  float: right!important;
+  background-color: #00cccc;
+  cursor: pointer;
+}
+
+.navhyper-angle {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 60px solid #00cccc;
+  position: absolute;
+  margin-left: -16px;
+}
+
+.navhyper-link {
+  padding: 18px 0 0 20px;
+}
+
+.navhyper-link > a, .navhyper-link > a:hover, .navhyper-link > a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.navhyper-link > img {
+  position: absolute;
+  width: 18px;
+  right: 34px;
+  top: 21px;
+}
+
+@media (max-width: 768px) {
+  .navbar-title {
+    display: none;
+  }
+
+  .navhyper-angle {
+    display: none;
+  }
 }
 
 /* Hide search on mobile devices */
@@ -255,8 +308,20 @@ header {
 .search-icon {
   position: absolute;
   width: 18px;
-  right: 15px;
+  right: 206px;
   top: 21px;
+}
+
+@media (max-width: 1260px) {
+  .navbar-hyper {
+    display: none;
+  }
+  .navbar-form {
+    width: 250px;
+  }
+  .search-icon {
+    right: 16px;
+  }
 }
 
 .subnav {
